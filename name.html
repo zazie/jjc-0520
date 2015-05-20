@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
-<script>
-var animals = [
-  'ライオン',
-  '犬',
-  'ひつじ',
-  'ねこ'
-];
-</script>
 <body>
-  
+<input type="text" id="wrestler" placeholder="レスラーの名前を入力"></inpu>
+<input type="button" value="判定" id="btn">
 </body>
+<script>
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+  var wrestler = document.getElementById('wrestler').value;
+  // ここにswitchを使って書く
+});
+</script>
 </html>
