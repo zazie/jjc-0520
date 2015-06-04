@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<input type="text" id="wrestler" placeholder="レスラーの名前を入力"></inpu>
+<input type="button" value="判定" id="btn">
+</body>
+<script>
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+  var wrestler = document.getElementById('wrestler').value;
+  // ここにswitchを使って書く
+  var threeMusketeers = ['武藤敬司', '蝶野正洋','橋本真也'];
+  switch(wrestler){
+  	case threeMusketeers[0]:
+  	case threeMusketeers[1]:
+  	case threeMusketeers[2]:
+  	alert('闘魂三銃士！！')
+  	break;
+  	default :
+   　alert('だれそれ？');
+  }
+});
+</script>
+</html>
